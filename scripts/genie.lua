@@ -83,6 +83,9 @@ newaction {
 
 			local ziggen = require "bindings-zig"
 			ziggen.write(ziggen.gen(), "../bindings/zig/bgfx.zig")
+
+			local odingen = require "bindings-odin"
+			odingen.write(odingen.gen(), "../bindings/odin/bgfx.odin")
 		end
 
 		os.exit()
